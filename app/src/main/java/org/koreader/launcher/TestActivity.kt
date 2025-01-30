@@ -28,6 +28,7 @@ import org.koreader.launcher.device.lights.TolinoRootController
 import org.koreader.launcher.device.lights.TolinoNtxController
 import org.koreader.launcher.device.lights.TolinoNtxNoWarmthController
 import org.koreader.launcher.device.lights.BoyueS62RootController
+import org.koreader.launcher.device.lights.Light_InkbookFocusPlus
 import org.koreader.launcher.dialog.LightDialog
 import org.koreader.launcher.dialog.ToolTip
 
@@ -81,6 +82,7 @@ class TestActivity: AppCompatActivity() {
         lightsMap["Tolino Root"] = TolinoRootController()
         lightsMap["Tolino Ntx"] = TolinoNtxController()
         lightsMap["Tolino Ntx (no warmth)"] = TolinoNtxNoWarmthController()
+        lightsMap["Inkbook Focus Plus"] = Light_InkbookFocusPlus()
 
         // Device ID
         binding.info.append("Manufacturer: ${DeviceInfo.MANUFACTURER}\n")
