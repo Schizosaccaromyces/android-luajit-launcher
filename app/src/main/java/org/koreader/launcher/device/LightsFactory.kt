@@ -97,6 +97,10 @@ object LightsFactory {
                     logController("TolinoRoot")
                     TolinoRootController()
                 }
+                DeviceInfo.LightsDevice.INKBOOKFOCUS_PLUS -> {
+                    logController("Light_InkbookFocusPlus")
+                    TolinoEpos3Controller()
+                }
                 else -> {
                     logController("Generic")
                     GenericController()
